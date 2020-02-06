@@ -12,6 +12,7 @@ using Mcr.Mvc.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Mcr.Data.Context;
 
 namespace Mcr.Mvc
 {
@@ -30,6 +31,9 @@ namespace Mcr.Mvc
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<LeasingDbContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("LeasingConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
