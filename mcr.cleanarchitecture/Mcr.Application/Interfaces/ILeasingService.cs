@@ -6,5 +6,7 @@ namespace Mcr.Application.Interfaces
     public interface ILeasingService
     {
         LeasingViewModel GetLeasings();
+
+        void CreateLeasing(LeasingViewModel leasingViewModel);
     }
 }
