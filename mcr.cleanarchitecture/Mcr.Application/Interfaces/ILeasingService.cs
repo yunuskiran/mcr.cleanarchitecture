@@ -5,6 +5,6 @@ namespace Mcr.Application.Interfaces
 {
     public interface ILeasingService
     {
-        IEnumerable<LeasingViewModel> GetLeasings();
+        LeasingViewModel GetLeasings();
     }
 }
