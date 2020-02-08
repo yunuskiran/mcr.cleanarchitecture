@@ -14,9 +14,6 @@ namespace Mcr.Mvc.Controllers
         }
 
         public IActionResult Index()
-        {
-            var leasingViewModel = _leasingService.GetLeasings();
-            return View(leasingViewModel);
-        }
+         => View(_leasingService.GetLeasings());
     }
 }

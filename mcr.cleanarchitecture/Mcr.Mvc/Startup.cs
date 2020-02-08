@@ -41,6 +41,7 @@ namespace Mcr.Mvc
             services.AddControllersWithViews();
             services.AddRazorPages();
             services.AddMediatR(typeof(Startup));
+            services.RegisterAutoMapper();
             Bootstrapper.RegisterServices(services);
         }
 

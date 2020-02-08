@@ -39,6 +39,7 @@ namespace Mcr.Api
                 swagger.SwaggerDoc("v1", new OpenApiInfo { Title = "Leasing api", Version = "v1" });
             });
             services.AddMediatR(typeof(Startup));
+            services.RegisterAutoMapper();
             Bootstrapper.RegisterServices(services);
         }
 

@@ -8,7 +8,5 @@ namespace Mcr.Application.ViewModels
         public int WorkOrderId { get; set; }
         public decimal Amount { get; set; }
         public string Currency { get; set; }
-
-        public IEnumerable<Leasing> Leasings { get; set; }
     }
 }
