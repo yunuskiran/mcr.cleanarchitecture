@@ -1,4 +1,4 @@
-﻿@model Mcr.Application.ViewModels.LeasingViewModel
+﻿@model IEnumerable<Mcr.Application.ViewModels.LeasingViewModel>
 
 <div class="container body-content">
     <div class="row leasing-content">
@@ -12,11 +12,10 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var leasing in Model.Leasings)
+                @foreach (var leasing in Model)
                 {
                     <tr>
-                        <th scope="row">@leasing.Id</th>
-                        <td>@leasing.WorkorderId</td>
+                        <td>@leasing.WorkOrderId</td>
                         <td>@leasing.Amount</td>
                         <td>@leasing.Currency</td>
                     </tr>

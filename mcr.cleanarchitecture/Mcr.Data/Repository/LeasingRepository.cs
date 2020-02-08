@@ -18,7 +18,13 @@ namespace Mcr.Data.Repository
             _leasingDbContext = leasingDbContext;
         }
 
-        public IEnumerable<Leasing> GetLeasings()
-            => _leasingDbContext.Leasings.ToList();
+        public void Add(Leasing leasing)
+        {
+            _leasingDbContext.Add(leasing);
+            _leasingDbContext.SaveChanges();
+        }
+
+        public IQueryable<Leasing> GetLeasings()
+            => _leasingDbContext.Leasings;
     }
 }

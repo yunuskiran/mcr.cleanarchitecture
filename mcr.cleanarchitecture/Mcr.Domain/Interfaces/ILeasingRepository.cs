@@ -1,10 +1,11 @@
 ﻿using Mcr.Domain.Models;
-using System.Collections.Generic;
+using System.Linq;
 
 namespace Mcr.Domain.Interfaces
 {
     public interface ILeasingRepository
     {
-        IEnumerable<Leasing> GetLeasings();
+        IQueryable<Leasing> GetLeasings();
+        void Add(Leasing leasing);
     }
 }

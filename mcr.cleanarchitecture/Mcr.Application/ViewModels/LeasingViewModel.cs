@@ -5,6 +5,8 @@ namespace Mcr.Application.ViewModels
 {
     public class LeasingViewModel
     {
-        public IEnumerable<Leasing> Leasings { get; set; }
+        public int WorkOrderId { get; set; }
+        public decimal Amount { get; set; }
+        public string Currency { get; set; }
     }
 }
