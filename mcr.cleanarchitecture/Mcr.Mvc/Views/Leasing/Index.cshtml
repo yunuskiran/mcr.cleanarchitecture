@@ -1,0 +1,27 @@
+﻿@model Mcr.Application.ViewModels.LeasingViewModel
+
+<div class="container body-content">
+    <div class="row leasing-content">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Work Order Id</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Currency</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var leasing in Model.Leasings)
+                {
+                    <tr>
+                        <th scope="row">@leasing.Id</th>
+                        <td>@leasing.WorkorderId</td>
+                        <td>@leasing.Amount</td>
+                        <td>@leasing.Currency</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
