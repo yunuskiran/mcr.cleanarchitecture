@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Mcr.Application\Mcr.Application.csproj" />
+    <ProjectReference Include="..\Mcr.Bus\Mcr.Bus.csproj" />
     <ProjectReference Include="..\Mcr.Data\Mcr.Data.csproj" />
   </ItemGroup>
 

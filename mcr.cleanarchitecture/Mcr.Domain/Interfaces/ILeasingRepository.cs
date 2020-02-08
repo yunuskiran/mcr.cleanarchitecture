@@ -6,5 +6,6 @@ namespace Mcr.Domain.Interfaces
     public interface ILeasingRepository
     {
         IEnumerable<Leasing> GetLeasings();
+        void Add(Leasing leasing);
     }
 }
