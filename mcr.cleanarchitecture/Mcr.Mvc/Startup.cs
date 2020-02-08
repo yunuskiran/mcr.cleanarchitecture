@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Mcr.Data.Context;
 using Mcr.Installer;
+using MediatR;
 
 namespace Mcr.Mvc
 {
@@ -39,7 +40,7 @@ namespace Mcr.Mvc
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
-
+            services.AddMediatR(typeof(Startup));
             Bootstrapper.RegisterServices(services);
         }
 

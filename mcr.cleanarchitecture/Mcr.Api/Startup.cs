@@ -2,14 +2,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Mcr.Data.Context;
+using Mcr.Installer;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 
 namespace Mcr.Api
 {
@@ -26,6 +31,15 @@ namespace Mcr.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<LeasingDbContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("LeasingConnection")));
+            services.AddSwaggerGen(swagger =>
+            {
+                swagger.SwaggerDoc("v1", new OpenApiInfo { Title = "Leasing api", Version = "v1" });
+            });
+            services.AddMediatR(typeof(Startup));
+            Bootstrapper.RegisterServices(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,7 +51,11 @@ namespace Mcr.Api
             }
 
             app.UseHttpsRedirection();
-
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Leasing API V1");
+            });
             app.UseRouting();
 
             app.UseAuthorization();
