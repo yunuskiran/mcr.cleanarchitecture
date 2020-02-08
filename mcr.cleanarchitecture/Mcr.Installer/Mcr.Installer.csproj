@@ -8,4 +8,9 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Mcr.Application\Mcr.Application.csproj" />
+    <ProjectReference Include="..\Mcr.Data\Mcr.Data.csproj" />
+  </ItemGroup>
+
 </Project>

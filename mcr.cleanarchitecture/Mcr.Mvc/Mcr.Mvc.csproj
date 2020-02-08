@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Mcr.Data\Mcr.Data.csproj" />
+    <ProjectReference Include="..\Mcr.Installer\Mcr.Installer.csproj" />
   </ItemGroup>
 
 </Project>
