@@ -23,17 +23,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mcr.Data", "Mcr.Data\Mcr.Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mcr.Application", "Mcr.Application\Mcr.Application.csproj", "{529449B9-3CF9-464E-B80F-865326BEF1B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mcr.Installer", "Mcr.Installer\Mcr.Installer.csproj", "{6F746EA9-D6B0-4BF9-9124-7FD57C311920}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mcr.Installer", "Mcr.Installer\Mcr.Installer.csproj", "{6F746EA9-D6B0-4BF9-9124-7FD57C311920}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{021DD354-686B-4082-B5B8-6CF0248A6768}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bus", "Bus", "{45F97CFB-7C3B-4473-8FBC-3D7B3F1854C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mcr.Bus", "Mcr.Bus\Mcr.Bus.csproj", "{B2EE8EBD-5CEE-4027-8493-34D63D50BFB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mcr.Bus", "Mcr.Bus\Mcr.Bus.csproj", "{B2EE8EBD-5CEE-4027-8493-34D63D50BFB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mcr.Core", "Mcr.Core\Mcr.Core.csproj", "{60455115-A79F-4403-9A40-7BF5DF2F2D07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mcr.Core", "Mcr.Core\Mcr.Core.csproj", "{60455115-A79F-4403-9A40-7BF5DF2F2D07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mcr.Api", "Mcr.Api\Mcr.Api.csproj", "{B204FD42-3834-4B40-A346-A2F0C99B4824}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mcr.Api", "Mcr.Api\Mcr.Api.csproj", "{B204FD42-3834-4B40-A346-A2F0C99B4824}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CorssCuttingConcerns", "CorssCuttingConcerns", "{09ECB98A-E1B1-4F3A-99FD-6A5ADCBAB13D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mcr.CrossCuttingConcerns", "Mcr.CrossCuttingConcerns\Mcr.CrossCuttingConcerns.csproj", "{2BAE9FA6-60DC-45FD-832E-9D9C21D0884D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +77,10 @@ Global
 		{B204FD42-3834-4B40-A346-A2F0C99B4824}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B204FD42-3834-4B40-A346-A2F0C99B4824}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B204FD42-3834-4B40-A346-A2F0C99B4824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BAE9FA6-60DC-45FD-832E-9D9C21D0884D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BAE9FA6-60DC-45FD-832E-9D9C21D0884D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BAE9FA6-60DC-45FD-832E-9D9C21D0884D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BAE9FA6-60DC-45FD-832E-9D9C21D0884D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,6 +97,7 @@ Global
 		{B2EE8EBD-5CEE-4027-8493-34D63D50BFB2} = {45F97CFB-7C3B-4473-8FBC-3D7B3F1854C8}
 		{60455115-A79F-4403-9A40-7BF5DF2F2D07} = {03974251-E418-4D71-A0B3-8E3837802C24}
 		{B204FD42-3834-4B40-A346-A2F0C99B4824} = {021DD354-686B-4082-B5B8-6CF0248A6768}
+		{2BAE9FA6-60DC-45FD-832E-9D9C21D0884D} = {09ECB98A-E1B1-4F3A-99FD-6A5ADCBAB13D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E463B079-FE4F-455F-9442-FF6872E226F6}
