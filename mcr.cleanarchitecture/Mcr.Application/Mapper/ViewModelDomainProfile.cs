@@ -1,9 +1,6 @@
 ﻿using AutoMapper;
 using Mcr.Application.ViewModels;
 using Mcr.Domain.Commands;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Mcr.Application.Mapper
 {

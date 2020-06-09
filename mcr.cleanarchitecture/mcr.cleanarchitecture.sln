@@ -37,9 +37,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mcr.Api", "Mcr.Api\Mcr.Api.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CorssCuttingConcerns", "CorssCuttingConcerns", "{09ECB98A-E1B1-4F3A-99FD-6A5ADCBAB13D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mcr.CrossCuttingConcerns", "Mcr.CrossCuttingConcerns\Mcr.CrossCuttingConcerns.csproj", "{2BAE9FA6-60DC-45FD-832E-9D9C21D0884D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mcr.CrossCuttingConcerns", "Mcr.CrossCuttingConcerns\Mcr.CrossCuttingConcerns.csproj", "{2BAE9FA6-60DC-45FD-832E-9D9C21D0884D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D9EB30B3-A0BA-485F-A4A3-DA62B95CA07A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{DFDBC2D9-213C-42C6-BDEE-A19997FCE7B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github-changelog-generator", "github-changelog-generator", "{559CBF10-9A27-4E35-8AA1-5A992FECA2C6}"
+	ProjectSection(SolutionItems) = preProject
+		tools\github-changelog-generator\changelog.md = tools\github-changelog-generator\changelog.md
+		tools\github-changelog-generator\config.yaml = tools\github-changelog-generator\config.yaml
+		tools\github-changelog-generator\generator.exe = tools\github-changelog-generator\generator.exe
+		tools\github-changelog-generator\README.md = tools\github-changelog-generator\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -100,6 +110,7 @@ Global
 		{60455115-A79F-4403-9A40-7BF5DF2F2D07} = {03974251-E418-4D71-A0B3-8E3837802C24}
 		{B204FD42-3834-4B40-A346-A2F0C99B4824} = {021DD354-686B-4082-B5B8-6CF0248A6768}
 		{2BAE9FA6-60DC-45FD-832E-9D9C21D0884D} = {09ECB98A-E1B1-4F3A-99FD-6A5ADCBAB13D}
+		{559CBF10-9A27-4E35-8AA1-5A992FECA2C6} = {DFDBC2D9-213C-42C6-BDEE-A19997FCE7B7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E463B079-FE4F-455F-9442-FF6872E226F6}

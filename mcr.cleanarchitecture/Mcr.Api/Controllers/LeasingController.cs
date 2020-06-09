@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Mcr.Application.Interfaces;
+﻿using Mcr.Application.Interfaces;
 using Mcr.Application.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace Mcr.Api.Controllers
 {
