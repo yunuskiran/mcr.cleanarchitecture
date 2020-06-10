@@ -2,7 +2,7 @@
 This is the sample clean architecture template. 
 
 
-#Installations
+### Installation
 
   - dotnet restore
   - dotnet build
